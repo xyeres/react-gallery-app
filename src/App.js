@@ -42,9 +42,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="container">
-        <h1 className="logo"><Link to="/">ImageSearchr</Link></h1>
-        <Route render={({history}) => <SearchForm history={history} onSearch={this.fetchPhotos} />} />
+          <h1 className="logo"><Link to="/">ImageSearchr</Link></h1>
+          {/* Render Search form through Route so that we can pass history obj to it */}
+          <Route render={({ history }) => <SearchForm history={history} onSearch={this.fetchPhotos} />} />
+          {/* Render static Nav Component */}
           <MainNav />
+          {/* Handle Routes */}
           <Switch>
             <Route exact path="/" />
             {/* Handle queries to API via url routes */}
@@ -53,7 +56,6 @@ class App extends Component {
             {/* Handle 404 requests */}
             <Route component={PageNotFound} />
           </Switch>
-
         </div>
       </BrowserRouter>
     );
