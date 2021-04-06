@@ -21,6 +21,9 @@ I have implemented the exceeds expectations features including:
 - Loading Indicator
 - No Matches Message
 
+Bonus feature: 
+- Users can click on a thumbnail to see a larger version of the photo
+
 
 
 
