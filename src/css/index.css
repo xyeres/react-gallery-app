@@ -2,6 +2,7 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #3f4850;
+  background-color: #d1bca633;
 }
 
 h2 {
@@ -134,13 +135,12 @@ input {
 }
 
 .logo a {
-  font-family: 'Zilla Slab Highlight', cursive;
-  color:white;
-  background-color: #4f4f4f;
+  font-family: 'Abril Fatface', cursive;
+    color:#3a2f23;
 }
 
 .logo a:hover {
-  background-color: tomato;
+  text-decoration: underline;
 }
 
 .caption {
