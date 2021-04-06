@@ -1,4 +1,31 @@
-# Getting Started with Create React App
+# How to use this app:
+This app requires that you supply it with a config file to pass flickr.com API credentials
+
+Touch config.js at ./src in the following format:
+```
+const FLICKR = {
+    "key": "your-key-here",
+    "secret": "your-secret-here"
+}
+
+export default FLICKR;
+```
+- Download source
+- Create your config.js
+- npm start
+- Have fun
+
+I have implemented the exceeds expectations features including:
+    - Browser navigation works for the search route
+    - 404 error
+    - Loading Indicator
+    - No Matches Message
+
+
+
+    
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
