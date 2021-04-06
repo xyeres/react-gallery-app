@@ -16,14 +16,14 @@ export default FLICKR;
 - Have fun
 
 I have implemented the exceeds expectations features including:
-    - Browser navigation works for the search route
-    - 404 error
-    - Loading Indicator
-    - No Matches Message
+- Browser navigation works for the search route
+- 404 error
+- Loading Indicator
+- No Matches Message
 
 
 
-    
+
 
 ## Getting Started with Create React App
 
