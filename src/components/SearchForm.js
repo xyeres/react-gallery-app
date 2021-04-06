@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 class SearchForm extends Component {
-
-
     state = {
         search: ''
     }
@@ -11,6 +9,7 @@ class SearchForm extends Component {
         this.setState({ search: e.target.value });
     }
 
+    // Submit is essentially a url getter pushing the users query to the url bar
     handleSubmit = (e) => {
         e.preventDefault();
         let path = `/q/${this.query.value}`;

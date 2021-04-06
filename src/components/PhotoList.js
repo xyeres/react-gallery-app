@@ -1,25 +1,27 @@
-import React from 'react'; 
+import React from 'react';
 import Photo from './Photo';
-import NotFound from './NotFound';
-
+/* 
+    Generates a list of photos by mapping the data from the api
+*/
 const PhotoList = (props) => {
     const results = props.data;
     let photos;
-    if (results.length > 0) {
-        photos = results.map(photo => 
-            <Photo 
-                key={photo.id}
-                data={photo}
-            />
-        )
-    } else {
-        photos = <NotFound query={props.query} />
-    }
+    
+    photos = results.map(photo =>
+        <Photo
+            key={photo.id}
+            data={photo}
+            query={props.query}
+        />
+    )
 
     return (
-        <ul>
-            {photos}
-        </ul>
+        <div>
+            <h2>{`Results for ${props.query}`}</h2>
+            <ul>
+                {photos}
+            </ul>
+        </div>
     )
 }
 

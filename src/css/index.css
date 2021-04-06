@@ -5,7 +5,7 @@ body {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.4em;
   margin: 52px 0 40px;
   text-transform: capitalize;
 }
@@ -27,7 +27,7 @@ a {
 
 .search-form button {
   outline: none;
-  background-color: #438bbd;
+  background-color: #e6d2be;
   border: none;
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
@@ -37,7 +37,7 @@ a {
 input {
   font-size: 1em;
   width: 100%;
-  background-color: #edeff0;
+  background-color: #fafafa;
   padding: 10px 15px;
   border: 3px solid #d7dbdf;
   border-right: none;
@@ -52,16 +52,21 @@ input {
 
 .main-nav a {
   display: block;
-  background: #438bbd;
+  background: #90ad95;
   border-radius: 3px;
   padding: 5px;
   color: #fff;
 }
 
 .main-nav .active,
-.main-nav a:hover,
+.main-nav a:hover button:hover {
+  background-color: #57735c;
+  border: 2px solid #57735c;
+}
+
+
 .search-form button:hover {
-  background-color: #275270;
+  background-color: #af8a66;
 }
 
 .photo-container ul {
@@ -122,4 +127,37 @@ input {
     margin: 10px;
     width: 100px;
   }
+}
+
+.logo {
+  padding:10px;
+}
+
+.logo a {
+  font-family: 'Zilla Slab Highlight', cursive;
+  color:white;
+  background-color: #4f4f4f;
+}
+
+.logo a:hover {
+  background-color: tomato;
+}
+
+.caption {
+  text-transform: capitalize;
+  display: block;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.caption a {
+  display: block;
+  margin:20px;
+  color: #8b7d6e;
+  font-size:1em;
+}
+
+.caption a:hover {
+  font-size:1.02em;
+  color:darkgrey;
 }
